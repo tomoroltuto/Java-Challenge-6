@@ -14,10 +14,8 @@ public class IndexController {
     @GetMapping
     public String index(Model model) {
         LocalDateTime today = LocalDateTime.now();
-        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyy年MM月dd日 HH時mm分ss秒");
-        String dateTimeJa = dateTimeFormatter.format(today);
-
-        model.addAttribute("today", dateTimeJa);
+        String formattedDateTime = DateTimeFormatter.ofPattern("yyy年MM月dd日 HH時mm分ss秒").format(LocalDateTime.now());
+        model.addAttribute("formattedDateTime", formattedDateTime);
         return "index";
     }
 }
