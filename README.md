@@ -1,8 +1,6 @@
 # 概要
 Java-Challenge-6ではWeb上にHello World！+日時が表示できるように以下のことをしました。
-レビューお願いします。
 
-# やったこと
 * ①Spring Boot設定
 * ②Hello World！を表示
 * ③日時を表示
